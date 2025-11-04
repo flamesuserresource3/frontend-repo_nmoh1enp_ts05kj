@@ -11,7 +11,7 @@ export default function AnimatedMockup() {
         </div>
 
         <div className="relative mt-12 grid gap-10 lg:grid-cols-2">
-          {/* Laptop Mockup */}
+          {/* Laptop Mockup with real image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -22,41 +22,24 @@ export default function AnimatedMockup() {
             <div className="relative rounded-2xl border border-gray-200 bg-gradient-to-b from-gray-50 to-white p-4 shadow-lg">
               <div className="mx-auto h-5 w-24 rounded-full bg-gray-200" />
               <div className="mt-3 overflow-hidden rounded-xl border border-gray-200 bg-black">
-                {/* Animated UI screenshot */}
+                {/* Real website screenshot inside laptop */}
                 <div className="relative h-[320px] w-full overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/40 via-violet-600/30 to-cyan-500/30" />
-                  <motion.div
-                    className="absolute inset-0"
-                    initial={{ y: 0 }}
-                    animate={{ y: ['0%', '-20%', '0%'] }}
-                    transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-                  >
-                    <div className="grid h-full grid-cols-12 gap-4 p-6">
-                      <div className="col-span-3 space-y-3">
-                        <div className="h-3 w-20 rounded bg-white/30" />
-                        <div className="h-3 w-24 rounded bg-white/20" />
-                        <div className="h-3 w-16 rounded bg-white/20" />
-                        <div className="h-3 w-28 rounded bg-white/20" />
-                      </div>
-                      <div className="col-span-9">
-                        <div className="grid grid-cols-3 gap-4">
-                          {[...Array(6)].map((_, i) => (
-                            <div key={i} className="rounded-xl border border-white/20 bg-white/10 p-4">
-                              <div className="h-24 rounded-lg bg-white/10" />
-                              <div className="mt-3 h-3 w-24 rounded bg-white/30" />
-                              <div className="mt-2 h-3 w-16 rounded bg-white/20" />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
+                  <motion.img
+                    src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1600&auto=format&fit=crop"
+                    alt="Contoh tampilan website di desktop"
+                    className="h-full w-full object-cover"
+                    initial={{ scale: 1.02 }}
+                    animate={{ scale: [1.02, 1.07, 1.02], y: [0, -8, 0] }}
+                    transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+                  />
+                  {/* Subtle glass top bar */}
+                  <div className="pointer-events-none absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-black/40 to-transparent" />
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Mobile Mockup Stack */}
+          {/* Mobile Mockup Stack with real images */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -65,6 +48,7 @@ export default function AnimatedMockup() {
             className="relative mx-auto grid w-full max-w-xl place-items-center"
           >
             <div className="relative">
+              {/* Back phone */}
               <motion.div
                 initial={{ rotate: -8, y: 0 }}
                 whileHover={{ y: -6 }}
@@ -73,16 +57,19 @@ export default function AnimatedMockup() {
                 <div className="h-[520px] w-[260px] rounded-[2rem] border border-gray-200 bg-black p-2">
                   <div className="mx-auto h-5 w-20 rounded-full bg-gray-200" />
                   <div className="mt-2 h-[470px] overflow-hidden rounded-[1.5rem] border border-gray-800">
-                    <motion.div
-                      initial={{ y: 0 }}
-                      animate={{ y: ['0%', '-25%', '0%'] }}
-                      transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-                      className="h-full w-full bg-gradient-to-b from-indigo-500/40 via-fuchsia-500/40 to-cyan-500/40"
+                    <motion.img
+                      src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=1200&auto=format&fit=crop"
+                      alt="Tampilan mobile 1"
+                      className="h-full w-full object-cover"
+                      initial={{ scale: 1.03, y: 0 }}
+                      animate={{ scale: [1.03, 1.08, 1.03], y: [0, -12, 0] }}
+                      transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
                     />
                   </div>
                 </div>
               </motion.div>
 
+              {/* Front phone */}
               <motion.div
                 initial={{ rotate: 8, y: 0 }}
                 whileHover={{ y: -6 }}
@@ -91,22 +78,14 @@ export default function AnimatedMockup() {
                 <div className="h-[520px] w-[260px] rounded-[2rem] border border-gray-200 bg-black p-2">
                   <div className="mx-auto h-5 w-20 rounded-full bg-gray-200" />
                   <div className="mt-2 h-[470px] overflow-hidden rounded-[1.5rem] border border-gray-800">
-                    <motion.div
-                      initial={{ y: 0 }}
-                      animate={{ y: ['0%', '-25%', '0%'] }}
-                      transition={{ duration: 9, repeat: Infinity, ease: 'easeInOut' }}
-                      className="h-full w-full bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.2),transparent_40%)]"
-                    >
-                      <div className="p-4">
-                        <div className="h-8 w-24 rounded-lg bg-white/30" />
-                        <div className="mt-3 h-3 w-36 rounded bg-white/20" />
-                        <div className="mt-6 space-y-3">
-                          {[...Array(5)].map((_, i) => (
-                            <div key={i} className="h-10 rounded-xl bg-white/10" />
-                          ))}
-                        </div>
-                      </div>
-                    </motion.div>
+                    <motion.img
+                      src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop"
+                      alt="Tampilan mobile 2"
+                      className="h-full w-full object-cover"
+                      initial={{ scale: 1.02, y: 0 }}
+                      animate={{ scale: [1.02, 1.06, 1.02], y: [0, -10, 0] }}
+                      transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut' }}
+                    />
                   </div>
                 </div>
               </motion.div>
