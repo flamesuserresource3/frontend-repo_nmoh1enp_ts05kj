@@ -2,18 +2,18 @@ import { Code, Smartphone, Shield } from 'lucide-react';
 
 const services = [
   {
-    title: 'Website Company Profile',
-    desc: 'Tampil profesional dengan situs cepat, mobile-friendly, dan mudah dikelola.',
+    title: 'Website Company Profile UMKM',
+    desc: 'Bangun kepercayaan pelanggan dengan situs profesional, cepat, dan mudah dikelola (CMS).',
     icon: Code,
   },
   {
-    title: 'E-Commerce & Catalog',
-    desc: 'Jual produk dengan lancar. Integrasi pembayaran, ongkir, dan manajemen produk.',
+    title: 'Toko Online & Katalog Produk',
+    desc: 'Jualan lebih mudah. Integrasi pembayaran, ongkir, dan manajemen produk siap pakai.',
     icon: Smartphone,
   },
   {
     title: 'Optimasi SEO & Kecepatan',
-    desc: 'Meningkatkan visibilitas di Google dan performa agar pengunjung betah.',
+    desc: 'Riset kata kunci UMKM, struktur heading, metadata, dan performa agar naik di Google.',
     icon: Shield,
   },
 ];
@@ -23,8 +23,8 @@ export default function Services() {
     <section id="layanan" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold md:text-4xl">Layanan Kami</h2>
-          <p className="mt-3 text-gray-600">Solusi lengkap untuk hadirkan bisnis Anda di dunia digital.</p>
+          <h2 className="text-3xl font-bold md:text-4xl">Layanan Jasa Pembuatan Website UMKM</h2>
+          <p className="mt-3 text-gray-600">Solusi digital untuk meningkatkan visibilitas, kredibilitas, dan penjualan bisnis Anda.</p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

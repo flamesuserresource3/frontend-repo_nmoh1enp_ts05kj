@@ -11,7 +11,7 @@ const tiers = [
       'Responsive mobile & desktop',
       'Optimasi kecepatan dasar',
       'Form kontak & integrasi WA',
-      'Deploy & domain setup bantuan',
+      'Bantuan domain & hosting',
     ],
     cta: 'Mulai Sekarang',
   },
@@ -24,7 +24,7 @@ const tiers = [
       'Hingga 6-8 halaman',
       'Animasi & micro-interactions',
       'Blog/portfolio section',
-      'Optimasi SEO dasar',
+      'Optimasi SEO on-page (title, meta, H1-H3)',
       'Support 1 bulan',
     ],
     cta: 'Paket Terpopuler',
@@ -54,8 +54,8 @@ export default function Pricing() {
             <Sparkles size={16} />
             <span>Paket Harga Transparan</span>
           </div>
-          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Sesuaikan Paket dengan Kebutuhan</h2>
-          <p className="mt-3 text-gray-600">Harga sekali bayar termasuk setup & handover. Bisa request fitur tambahan sesuai kebutuhan.</p>
+          <h2 className="mt-4 text-3xl font-bold md:text-4xl">Paket Website untuk UMKM: Jelas & Fleksibel</h2>
+          <p className="mt-3 text-gray-600">Harga sekali bayar termasuk setup & handover. Bisa request fitur tambahan sesuai kebutuhan bisnis Anda.</p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -84,14 +84,14 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href={t.name === 'Enterprise' ? 'https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20diskusi%20paket%20Enterprise' : 'https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20paket%20' + encodeURIComponent(t.name)}
+                href={t.name === 'Enterprise' ? 'https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20diskusi%20paket%20Enterprise%20untuk%20UMKM' : 'https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20memesan%20paket%20' + encodeURIComponent(t.name) + '%20untuk%20UMKM'}
                 target="_blank"
                 rel="noreferrer"
                 className={`mt-8 inline-flex w-full items-center justify-center rounded-lg px-5 py-3 font-medium transition ${t.highlight ? 'bg-indigo-600 text-white hover:bg-indigo-700' : 'bg-gray-900 text-white hover:bg-black'}`}
               >
                 {t.cta}
               </a>
-              <div className="mt-3 text-xs text-gray-500">Estimasi 7-21 hari kerja tergantung kompleksitas.</div>
+              <div className="mt-3 text-xs text-gray-500">Estimasi 7-21 hari kerja tergantung kompleksitas. Termasuk panduan pengelolaan untuk tim Anda.</div>
             </div>
           ))}
         </div>

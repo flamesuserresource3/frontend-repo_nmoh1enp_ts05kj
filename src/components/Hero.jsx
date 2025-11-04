@@ -17,17 +17,17 @@ export default function Hero() {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm backdrop-blur">
               <Rocket size={16} />
-              <span>Jasa Pembuatan Website • Modern Tech</span>
+              <span>Jasa Pembuatan Website UMKM • SEO & Responsif</span>
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight md:text-6xl">
-              Website Futuristik untuk Bisnis yang Serius Tumbuh
+              Tingkatkan Penjualan dengan Website UMKM yang Cepat & SEO-Ready
             </h1>
             <p className="mt-4 text-lg text-gray-200 md:text-xl">
-              Kami membangun website berperforma tinggi dengan desain minimalis, nuansa teknologi, dan siap scale.
+              Kami membuat website profesional yang mobile-first, optimasi SEO on-page, dan performa tinggi agar bisnis Anda mudah ditemukan di Google.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20jasa%20pembuatan%20website"
+                href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20jasa%20pembuatan%20website%20UMKM"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 font-medium text-gray-900 shadow hover:bg-gray-100 transition"
@@ -42,6 +42,9 @@ export default function Hero() {
                 Lihat Portofolio
               </a>
             </div>
+            <p className="mt-4 text-sm text-gray-300">
+              Kata kunci: jasa pembuatan website UMKM, website toko online, company profile, optimasi SEO, web cepat & responsif.
+            </p>
           </div>
 
           {/* Spacer on large screens for layout balance; 3D is background so this just adds breathing room */}
