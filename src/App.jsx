@@ -1,6 +1,8 @@
 import Hero from './components/Hero';
 import Services from './components/Services';
+import AnimatedMockup from './components/AnimatedMockup';
 import Portfolio from './components/Portfolio';
+import Pricing from './components/Pricing';
 import ContactCTA from './components/ContactCTA';
 import { Rocket } from 'lucide-react';
 
@@ -17,6 +19,7 @@ function App() {
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#layanan" className="hover:text-indigo-600">Layanan</a>
             <a href="#portfolio" className="hover:text-indigo-600">Portofolio</a>
+            <a href="#harga" className="hover:text-indigo-600">Harga</a>
             <a href="#kontak" className="hover:text-indigo-600">Kontak</a>
           </nav>
           <a
@@ -33,7 +36,9 @@ function App() {
       <main className="pt-16">
         <Hero />
         <Services />
+        <AnimatedMockup />
         <Portfolio />
+        <Pricing />
         <ContactCTA />
       </main>
 
@@ -44,6 +49,7 @@ function App() {
             <div className="flex items-center gap-4">
               <a href="#layanan" className="hover:text-indigo-600">Layanan</a>
               <a href="#portfolio" className="hover:text-indigo-600">Portofolio</a>
+              <a href="#harga" className="hover:text-indigo-600">Harga</a>
               <a href="#kontak" className="hover:text-indigo-600">Kontak</a>
             </div>
           </div>
